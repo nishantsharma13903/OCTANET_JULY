@@ -7,118 +7,262 @@ body{
     font-family: "poppins";
 }
 
-.d-even{
+.main-container{
+    height: auto;
+    width: 100vw;
+}
+
+.img-cont{
+    background-image: url("Images/apdk.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -180px;
+    height: 45vh;
+    width: 100%;
+}
+
+.bottom-cont{
+    height: 55vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.main-container{
+.bc1{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(to bottom right, black,grey);
+    height: 50vh;
+    width: 40%;
+    background-color: #06044d;
+    color: white;
 }
 
-.mc-sec{
+.bc2{
+    height: 50vh;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #06044d;
 }
 
-.content{
-    width : 90%;
-}
-
-.content h1{
-    font-size: 90px;
-    text-align: center;
-    margin: 0px;
-}
-
-.content p{
-    margin: 0px;
-    text-align: end;
-}
-
-.calc-cont{
-    height: 620px;
-    width: 400px;
-    background: black;
-    border-radius: 5px;
-}
-
-.cc1{
-    height: 100px;
-    margin-top: 50px;
-}
-
-.cc1 input{
-    height: 100%;
+.form-container{
     width: 100%;
-    background-color: rgb(16, 15, 15);
+    text-align: center;
+}
+
+.task-input{
+    height: 50px;
+    width: 80%;
+    padding-left: 10px;
+    letter-spacing: 1px;
     outline: none;
+    background-color: transparent;
     border-width: 0px;
-    color: coral;
-    font-size: 20px;
-    padding: 10px 20px;
+    border-bottom: 2px solid #962ef2;
+    color: white;
+    font-size: 17px;
+}
+
+.task-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.form-head{
+    margin-bottom: 50px;
+}
+
+.form-head span{
+    color: #962ef2;
+    font-size: 45px;
+}
+
+.form-head span{
+    position: relative;
+}
+
+.form-head span::after{
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transform: skew(50deg);
+}
+
+.submit-btn{
+    height: 45px;
+    width: 200px;
+    background-color: #962ef2;
+    color: white;
+    border-width: 0px;
+    border-radius: 5px;
     letter-spacing: 2px;
-}
-
-.cc2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 420px;
-    margin-top: 20px;
-}
-
-button{
-    height: 55px;
-    width: 55px;
-    border-width: 0px;
-    border-radius: 50%;
-    margin: 15px 0px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    margin-top: 50px;
     cursor: pointer;
-    color: rgb(69, 68, 68);
-    transition: transform 0.5s;
+    font-weight: 500;
 }
 
-button:hover{
-    transform: scale(1.04);
+.task-container h1{
+    color: #962ef2;
+    text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-    .main-container{
-        flex-direction: column-reverse;
+.task-container h1 span{
+    position: relative;
+}
+
+.task-container h1 span::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+    transform: skew(50deg);
+    background-color: white;
+}
+
+.task-list{
+    overflow-y: scroll;
+    height: 250px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.task-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: white;
+}
+
+.task-list::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: #e5995b;
+}
+
+.task-card{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 10px;
+}
+
+.tc1{
+    width: 70%;
+    display: flex;
+}
+
+.tc2{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.task-card input{
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 10px;
+    margin-left: 30px;
+}
+
+.task-card label{
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    top: 6px;
+    width: 270px;
+    overflow-y: scroll;
+    height: 50px;
+    text-align: start;
+}
+
+.task-card label::-webkit-scrollbar{
+    display: none;
+}
+
+.task-card button{
+    height: 40px;
+    width: 40px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.task-card button i{
+    font-size: 20px;
+    color:#06044d;
+}
+
+.task-img-cont img{
+    height: 250px;
+    width: 50%;
+}
+
+@media  screen and (max-width: 1100px) {
+    .bottom-cont{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .bc1,.bc2{
+        padding: 50px 30px;
+        width: 80%;
+        margin-top: 50px;
         height: auto;
     }
-    .mc-sec{
-        height: auto;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .task-img-cont img{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .task-card{
+        flex-direction: column;
+    }
+    .task-card label{
         width: 100%;
-        margin: 50px 0px;
     }
-}
-
-@media screen and (max-width: 550px) {
-    .content h1{
-        font-size: 70px;
+    .tc1,.tc2{
+        width: 100%;
     }
-    .mc-sec{
-        margin: 40px 0px;
+    .task-img-cont img{
+        width: 80%;
     }
-}
-
-@media screen and (max-width: 420px) {
-    .content h1{
-        font-size: 50px;
-    }
-    .calc-cont{
+    .bc1,.bc2{
         width: 95%;
+    }
+    .img-cont{
+        background-position: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottom-cont{
+        margin-top: 0px;
+    }
+    .bc1,.bc2{
+        width: 98%;
+        padding: 30px 0px;
+    }
+    .task-img-cont img{
+        width: 100%;
+    }
+    .form-head span{
+        font-size: 30px;
+    }
+    .img-cont{
+        background-position: -50px 0px;
     }
 }
