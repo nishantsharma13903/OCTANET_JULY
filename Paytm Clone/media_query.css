@@ -1,0 +1,170 @@
+@media screen and (max-width: 1300px) {
+    .container-download img{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar-sec1,.navbar-sec3{
+        width: 50%;
+    }
+    .navbar-sec2{
+        display: none;
+    }
+    .container-download .content{
+        width: 80%;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    .container-download img{
+        width: 60%;
+    }
+    .container-download{
+        flex-direction: column-reverse;
+    }
+    .container-recharge,.container-book{
+        height: auto;
+    }
+    .payment-ins-card{
+        flex-direction: column-reverse;
+    }
+    .payment-ins-cc{
+        width: 95%;
+    }
+    .payment-ins-card .content{
+        width: 100%;
+        margin: 20px;
+    }
+    .container-financial{
+        width: 85%;
+        padding: 50px 0px;
+    }
+    .img-last{
+        flex-direction: column-reverse;
+    }
+    .img-last .content{
+        width: 90%;
+    }
+    .img-last img{
+        width: 50%;
+        height: 450px;
+    }
+    .paytm-money{
+        flex-direction: column;
+        margin: 200px 0px;
+    }
+    .paytm-money .content{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .paytm-money img{
+        width: 50%;
+        height: 400px;
+    }
+    .paytm-insurance{
+        flex-direction: column-reverse;
+    }
+    .paytm-insurance .content{
+        margin-top: 50px;
+        width: 70%;
+    }
+    .paytm-insurance img{
+        width: 50%;
+        height: 420px;
+    }
+    .paytm-loan{
+        flex-direction: column;
+    }
+    .paytm-loan .content{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .paytm-loan-img{
+        width: 40%;
+        height: 400px;
+    }
+    .hide-cont{
+        display: none;
+    }
+    .footer img{
+        display: none;
+    }
+    .mt-card{
+        margin: 10px;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    .img-last img{
+        width: 60%;
+        height: 370px;
+    }
+    .container-download img{
+        width: 60%;
+        height: 420px;
+    }
+    .paytm-loan-img{
+        width: 60%;
+        height: 350px;
+    }
+    .paytm-insurance img{
+        width: 60%;
+        height: 350px;
+    }
+    .navbar-bottom{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .navbar-sec1{
+        width: 100%;
+    }
+    .navbar-sec3{
+        display: none;
+    }
+    .container-download img{
+        height: 210px;
+    }
+    .logo-image{
+        height: 65px;
+        width: 170px;
+    }
+    .container-download .content{
+        margin: 0px;
+    }
+    .img-last img{
+        width: 75%;
+        height: 230px;
+    }
+    .payment-ins-card .content{
+        padding: 10px;
+    }
+    .dp-center img{
+        height: 200px;
+    }
+    .container-financial, .paytm-money{
+        padding: 0px;
+    }
+    .container-financial .content{
+        width: 100%;
+    }
+    .paytm-loan-img{
+        height: 220px;
+    }
+    .payment-ins-bg{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .paytm-money-card{
+        margin-top: 20px;
+    }
+    .paytm-insurance img{
+        width: 60%;
+        height: 200px;
+    }
+    .cr-card{
+        background-color: #23c6f8;
+        margin-top: 10px;
+    }
+}

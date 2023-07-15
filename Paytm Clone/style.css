@@ -1,0 +1,501 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(63, 162, 248);
+}
+
+.dp-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dp-center img{
+    height: 350px;
+    width: 100%;
+}
+
+.main-container{
+    width: 100vw;
+}
+
+.navbar{
+    height: 80px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 1px 10px grey;
+    padding: 0px;
+}
+
+.logo-image{
+    height: 65px;
+    width: 180px;
+}
+
+.navbar-sec1,.navbar-sec3{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-sec2{
+    width: 60%;
+}
+
+.navbar-sec2 ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.link-list{
+    list-style-type: none;
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.link-list a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.link-list a:hover{
+    text-decoration: none;
+    background-color: rgb(249, 249, 249);
+}
+
+.link-list:hover .dpd-content{
+    display: block;
+}
+
+.dpd-list{
+    list-style-type: none;
+    height: 50px;
+    width: 220px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+
+}
+
+.dpd-list a{
+    display: block;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.dpd-content{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    box-shadow: 0px 1px 8px grey;
+    display: none;
+}
+
+.navbar-button{
+    background-color: rgb(71, 197, 247);
+    border-width: 0px;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 20px 5px 0px;
+}
+
+.navbar-button:hover{
+    background-color: rgb(3, 182, 253);
+}
+
+.navbar-button img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid skyblue;
+}
+
+.navbar-bottom{
+    background-color: rgb(245, 242, 242);
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-bottom p{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+}
+
+.container-download{
+    width: 100vw;
+    margin: 65px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-download .content{
+    width: 32%;
+    margin-left: 100px;
+}
+
+.container-download .content img{
+    height: 80px;
+    width: 80px;
+}
+
+.container-download .content h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container-download .content p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.container-download img{
+    height: 500px;
+    width: 35%;
+}
+
+.container-recharge{
+    height: 48vh;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #00baf2;
+}
+
+.container-recharge h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.cr-card{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    width: 160px;
+    height: 210px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-recharge .cr-card:hover{
+    background-color: #23c6f8;
+}
+
+.container-book{
+    height: 48vh;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #1977fb;
+}
+
+.container-book h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.container-book .cr-card:hover{
+    background-color: rgb(11, 141, 255);
+}
+
+.payment-ins-bg{
+    background-color: rgb(245, 244, 244);
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.payment-ins-cc{
+    width: 80%;
+    padding-bottom: 100px;
+}
+
+.payment-ins-cc h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.payment-ins-card{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-ins-card .content{
+    width: 50%;
+    padding: 80px 50px 0px 50px;
+}
+
+.payment-ins-card .content h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.payment-ins-card .content p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.download-button{
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 280px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.lm-button{
+    background-color: #002970;
+    color: white;
+    height: 45px;
+    width: 180px;
+    border-radius: 20px;
+    font-weight: 500;
+    border-width: 0px;
+}
+
+.container-financial{
+    width: 80%;
+    padding: 90px 30px;
+}
+
+.img-last{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-last img{
+    width: 50%;
+}
+
+.container-financial h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.container-financial p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.paytm-money{
+    background-image: url("D:\\Nishant\\others\\Paytm_images\\gray-spike.webp");
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paytm-money .content{
+    width: 40%;
+}
+
+.paytm-money h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.paytm-money p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.paytm-insurance{
+    padding: 100px 0px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paytm-insurance img{
+    height: 420px;
+    width: 520px;
+}
+
+.paytm-insurance .content{
+    width: 30%;
+}
+
+.paytm-insurance h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.paytm-insurance p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.paytm-loan{
+    padding: 100px 0px; 
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paytm-loan .content{
+    width: 30%;
+}
+
+.paytm-loan-img{
+    height: 420px;
+    width: 30%;
+}
+
+.paytm-loan h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.paytm-loan p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.business-services{
+    width: 80%;
+}
+
+.business-services .content{
+    width: 40%;
+    padding: 50px 40px;
+}
+
+.business-card{
+    background-color: rgb(245, 244, 244);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.business-services h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.business-services p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.business-tools{
+    width: 87%;
+}
+
+.business-tools h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.bt-card{
+    width: 270px;
+    height: auto;
+}
+
+.bt-card a{
+    color: black;
+}
+
+.business-tools h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.business-tools p{
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.paytm-money-card{
+    margin-top: 150px;
+}
+
+.money-travel{
+    margin-top: 100px;
+    width: 90%;
+}
+
+.mt-content{
+    width: 200px;
+    padding: 20px;
+}
+
+.mt-content p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.mt-card{
+    background-color: #27cbfde7;
+    height: 250px;
+    width: 175px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.mt-card:hover{
+    background-color: #04c3fd;
+}
+
+.mt-card h5{
+    padding: 15px;
+}
+
+.mt-card p{
+    padding: 5px;
+    font-size: 15px;
+    font-weight:500;
+}
+
+.footer{
+    width: 90%;
+}
+
